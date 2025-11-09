@@ -67,10 +67,9 @@ Out of Scope
 ## 8. Test Deliverables
 - Test Plan (tests/test-plan.md)
 - Test Data (tests/test-data.md)
-- Draft Test Cases & Checklists (tests/test-cases.md)
-- Automated Unit/Integration Tests (src/tests/...)
-- Defect/Issue Log (tests/defect-log.md or GitHub Issues)
-- Phase 2 Test Summary Report
+- Test Cases and Reports (Phase 2)
+- Bug Reports (via GitHub Issues)
+- Final QA Summary Report
 
 ## 9. Schedule 
 ## Phase1

@@ -1,15 +1,16 @@
 ## CleanCity Application – Test Plan (Phase 1)
 ## 1. Document Information
-Version: 1.0
-Date: November 5, 2025
+Version: 2.0
+Date: November 9, 2025
 Project Name: CleanCity – Waste Pickup Scheduler
 Prepared By: Test Case Trio
 
 ## 2. Test Objectives
 - Validate the functionality, usability, and reliability of the CleanCity application.
 - Ensure key features such as user registration, login, waste pickup scheduling, and community features work correctly.
-- Verify that the app is responsive and performs consistently across major browsers and devices.
-- Identify and log defects for developer resolution.
+- Verify the app’s responsiveness across devices and browsers.
+- Identify defects early and log them for developer resolution.
+- Establish a baseline for automated and manual testing coverage.
 
 ## 3. Scope of Testing
 In Scope
@@ -19,6 +20,7 @@ In Scope
 - Accessibility and usability testing
 - Cross-browser and mobile responsiveness
 - localStorage-based data persistence
+- Early automated tests using Jest for critical workflows
 
 Out of Scope
 - Backend API or database testing (no server integration)
@@ -50,30 +52,66 @@ Out of Scope
 - localStorage: Data persistence after page reload
 
 ## 7. Testing type
-| Testing Type          | Description                                         |
-| --------------------- | --------------------------------------------------- |
-| Functional Testing    | Verify all features behave as expected              |
-| UI/UX Testing         | Ensure design consistency and clarity               |
-| Validation Testing    | Confirm form inputs and constraints                 |
-| Accessibility Testing | Check screen reader and color contrast compliance   |
-| Compatibility Testing | Verify responsiveness on different browsers/devices |
-| Regression Testing    | Re-test after bug fixes                             |
+| Testing Type          | Description                                          |
+| --------------------- | ---------------------------------------------------- |
+| Functional Testing    | Verify all features behave as expected               |
+| UI/UX Testing         | Ensure design consistency and clarity                |
+| Validation Testing    | Confirm form inputs and constraints                  |
+| Accessibility Testing | Screen reader, tab navigation, color contrast        |
+| Compatibility Testing | Cross-browser and device responsiveness              |
+| Regression Testing    | Re-test after bug fixes                              |
+| Automated Testing     | Jest-based unit tests for forms and components       |
+| Early Execution       | Manual exploratory testing and initial bug discovery |
+|
 
 ## 8. Test Deliverables
 - Test Plan (tests/test-plan.md)
 - Test Data (tests/test-data.md)
-- Test Cases and Reports (Phase 2)
-- Bug Reports (via GitHub Issues)
-- Final QA Summary Report
+- Draft Test Cases & Checklists (tests/test-cases.md)
+- Automated Unit/Integration Tests (src/tests/...)
+- Defect/Issue Log (tests/defect-log.md or GitHub Issues)
+- Phase 2 Test Summary Report
 
-## 9. Schedule (Phase1)
+## 9. Schedule 
+## Phase1
 | Task                            | Start Date | End Date | Status      |
 | ------------------------------- | ---------- | -------- | ----------- |
 | Project setup and repo creation | Nov 3      | Nov 4    | Done        |
 | Test plan and data preparation  | Nov 4      | Nov 5    | In Progress |
 | Initial issue creation on board | Nov 5      | Nov 5    | Pending     |
 
-## 10.Approval
+## Phase 2
+| Task                             | Start Date | End Date | Status      |
+| -------------------------------- | ---------- | -------- | ----------- |
+| Review Phase 1 outcomes          | Nov 6      | Nov 7    | Done        |
+| Draft Phase 2 Test Cases         | Nov 7      | Nov 8    | Done        |
+| Early Manual Testing             | Nov 8      | Nov 9    | In Progress |
+| Automated Testing (Jest)         | Nov 8      | Nov 10   | In Progress |
+| Defect Logging & Initial Review  | Nov 9      | Nov 11   | Pending     |
+| Test Plan Update & Documentation | Nov 9      | Nov 11   | Pending     |
+
+## 10.Test Cases
+| Test Case ID | Feature             | Steps                                                    | Expected Result                                   | Status |
+| ------------ | ------------------- | -------------------------------------------------------- | ------------------------------------------------- | ------ |
+| TC001        | Registration        | Open page → Fill valid name/email/password → Submit      | Account created, confirmation displayed           | Draft  |
+| TC002        | Login               | Open page → Enter valid email/password → Submit          | Redirect to Home/Dashboard, welcome message shown | Draft  |
+| TC003        | Waste Pickup Form   | Open form → Fill name, location, type → Submit           | Success alert shown, data saved in localStorage   | Draft  |
+| TC004        | Admin Update Status | Open admin panel → Select request → Change status → Save | Table updated, localStorage updated               | Draft  |
+| TC005        | Feedback Form       | Fill request ID, reason → Submit                         | Feedback alert shown                              | Draft  |
+| TC006        | Data Persistence    | Reload page after actions                                | Previously entered data remains                   | Draft  |
+| TC007        | Accessibility       | Navigate using keyboard, check color contrast            | Focus visible, ARIA labels present                | Draft  |
+
+## Notes
+Initial Jest tests cover:
+    Pickup Form validation and localStorage persistence
+    Admin dashboard rendering and status updates
+Manual exploratory tests confirm:
+    Form error handling
+    Alert messages
+    Navigation links and responsive design
+Defects identified in Phase 2 will be logged on GitHub with severity, description, and steps to reproduce
+
+## 11.Approval
 | Name                | Role         | Signature | Date |
 | ------------------- | ------------ | --------- | ---- |
 | Melody Tangus       | Test Manager |           |      |

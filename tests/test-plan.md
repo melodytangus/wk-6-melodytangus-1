@@ -65,6 +65,7 @@ Out of Scope
 - Test Cases and Reports (Phase 2)
 - Bug Reports (via GitHub Issues)
 - Final QA Summary Report
+- GithubKanban https://github.com/users/melodytangus/projects/2/views/1
 
 ## 9. Schedule (Phase1)
 | Task                            | Start Date | End Date | Status      |

@@ -3,7 +3,7 @@
 ## 📋 **Document Information**
 
 **Document Version:** 1.0  
-**Date:** [Current Date]  
+**Date:** 09/11/2025
 **Project:** CleanCity - Waste Pickup Scheduler  
 **Prepared For:** QA Testing Teams  
 
@@ -13,10 +13,10 @@
 
 ### **Regular User Accounts**
 ```
-Email: user1@test.com
+Email: melodytangus@gmail.com
 Password: TestPass123
 Role: User
-Name: John Doe
+Name: Melody Tangus
 Phone: +1-555-0101
 
 Email: user2@test.com

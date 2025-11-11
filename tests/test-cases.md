@@ -7,14 +7,14 @@
 
 | Test Case ID | Feature                   | Steps                                                            | Expected Result                                  | Status | Comments |
 | ------------ | ------------------------- | ---------------------------------------------------------------- | ------------------------------------------------ | ------ | -------- |
-| TC001        | Valid Login               | Open `/login` → Enter valid email & password → Click **Sign In** | Redirected to dashboard with welcome message     | Draft  |          |
-| TC002        | Invalid Password          | Enter valid email but incorrect password → Submit                | Error: *Invalid email or password*               | Draft  |          |
-| TC003        | Invalid Email Format      | Enter invalid email format (e.g., `abc@`) → Submit               | Error message displayed: *Invalid email address* | Draft  |          |
-| TC004        | Empty Fields              | Submit login form with empty fields                              | Validation prevents submission                   | Draft  |          |
-| TC005        | Session Persistence       | Login → Refresh the page                                         | User remains logged in                           | Draft  |          |
-| TC006        | Logout Function           | Login → Click **Logout**                                         | Redirected to home page, session cleared         | Draft  |          |
-| TC007        | Unauthorized Access       | Try to visit `/dashboard` without logging in                     | Redirected to `/login`                           | Draft  |          |
-| TC008        | Login Redirect After Auth | Log in → Ensure cannot access `/login` again                     | Redirected to `/dashboard`                       | Draft  |          |
+| TC001        | Valid Login               | Open `/login` → Enter valid email & password → Click **Sign In** | Redirected to dashboard with welcome message     | Fail   |          |
+| TC002        | Invalid Password          | Enter valid email but incorrect password → Submit                | Error: *Invalid email or password*               | Fail   |          |
+| TC003        | Invalid Email Format      | Enter invalid email format (e.g., `abc@`) → Submit               | Error message displayed: *Invalid email address* | Fail   |          |
+| TC004        | Empty Fields              | Submit login form with empty fields                              | Validation prevents submission                   | Fail   |          |
+| TC005        | Session Persistence       | Login → Refresh the page                                         | User remains logged in                           | Pass   |          |
+| TC006        | Logout Function           | Login → Click **Logout**                                         | Redirected to home page, session cleared         | Pass   |          |
+| TC007        | Unauthorized Access       | Try to visit `/dashboard` without logging in                     | Redirected to `/login`                           | Pass   |          |
+| TC008        | Login Redirect After Auth | Log in → Ensure cannot access `/login` again                     | Redirected to `/dashboard`                       | Pass   |          |
 
 ---
 

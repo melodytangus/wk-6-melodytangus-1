@@ -11,12 +11,11 @@ November 8–11, 2025
 
 # 3. Prepared By:
 
-|Name | Role |
---------------------------------------
-| Mercy Melody Chemutai| Test Manager|
-| Lorraine Bwayo | Test Executor |
-| Susan Mwangi | Risk Analyst |
-
+| Name             |  Role                           |
+| ---------------- | -------------------------------------- |
+|Mercy Melody Chemutai | Test Manager                          |
+| Lorraine Bwayo  | Risk Analyst |
+| Susan Mwangi  | Test Executor |
 
 ---
 

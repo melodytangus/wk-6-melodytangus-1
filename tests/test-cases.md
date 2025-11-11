@@ -22,14 +22,14 @@
 
 | Test Case ID | Feature              | Steps                                         | Expected Result                          | Status | Comments |
 | ------------ | -------------------- | --------------------------------------------- | ---------------------------------------- | ------ | -------- |
-| TC009        | Valid Registration   | Fill all fields correctly → Submit            | Success message → Redirect to login page | Draft  |          |
+| TC009        | Valid Registration   | Fill all fields correctly → Submit            | Success message → Redirect to login page | Pass |          |
 | TC010        | Empty Fields         | Submit form without filling any field         | Display validation errors for all fields | Draft  |          |
 | TC011        | Empty Name           | Leave Name blank → Submit                     | Error: *Name is required*                | Draft  |          |
 | TC012        | Invalid Email Format | Enter invalid email → Submit                  | Error: *Enter valid email address*       | Draft  |          |
 | TC013        | Short Password       | Enter password with less than 6 characters    | Error: *Password too short*              | Draft  |          |
 | TC014        | Password Mismatch    | Password ≠ Confirm Password → Submit          | Error: *Passwords do not match*          | Draft  |          |
 | TC015        | Duplicate Email      | Register using existing email                 | Error: *User already exists*             | Draft  |          |
-| TC016        | Successful Redirect  | Complete registration → Redirects to `/login` | Redirect successful                      | Draft  |          |
+| TC016        | Successful Redirect  | Complete registration → Redirects to `/login` | Redirect successful                      | Pass  |          |
 
 ---
 

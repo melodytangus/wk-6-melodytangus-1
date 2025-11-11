@@ -110,8 +110,59 @@ Manual exploratory tests confirm:
     Navigation links and responsive design
 Defects identified in Phase 2 will be logged on GitHub with severity, description, and steps to reproduce
 
-## 11.Approval
+
+## 11.Risk Assessment
+
+### **High-Risk Areas**
+
+1. **localStorage Limitations**
+   - **Risk:** Data loss or storage limit exceeded
+   - **Mitigation:** Test with large datasets, monitor storage usage
+
+2. **Cross-Browser Compatibility**
+   - **Risk:** Inconsistent behavior across browsers
+   - **Mitigation:** Early cross-browser testing, use browser compatibility matrix
+
+3. **Accessibility Compliance**
+   - **Risk:** WCAG 2.1 non-compliance
+   - **Mitigation:** Use accessibility tools, screen reader testing
+
+4. **Performance Issues**
+   - **Risk:** Slow page loads, poor responsiveness
+   - **Mitigation:** Performance testing early, network throttling tests
+
+### **Medium-Risk Areas**
+
+1. **Form Validation**
+   - **Risk:** Missing or incorrect validation
+   - **Mitigation:** Comprehensive boundary testing, edge case validation
+
+2. **Security Vulnerabilities**
+   - **Risk:** XSS, injection attacks
+   - **Mitigation:** Security testing, input sanitization validation
+
+3. **Data Integrity**
+   - **Risk:** Data corruption or loss
+   - **Mitigation:** Data persistence testing, session testing
+
+### **Low-Risk Areas**
+
+1. **UI/UX Issues**
+   - **Risk:** Minor visual inconsistencies
+   - **Mitigation:** Usability testing, visual regression checks
+
+2. **Documentation**
+   - **Risk:** Incomplete documentation
+   - **Mitigation:** Continuous documentation updates, peer reviews
+
+---
+
+## 12.Approval
 | Name                | Role         | Signature | Date |
 | ------------------- | ------------ | --------- | ---- |
 | Melody Tangus       | Test Manager |           |      |
 | Instructor/Reviewer | QA Lead      |           |      |
+
+
+**Document Status:** In-Progress 
+**Last Updated:** November 11, 2025

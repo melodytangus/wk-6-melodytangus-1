@@ -22,14 +22,14 @@
 
 | Test Case ID | Feature              | Steps                                         | Expected Result                          | Status | Comments |
 | ------------ | -------------------- | --------------------------------------------- | ---------------------------------------- | ------ | -------- |
-| TC009        | Valid Registration   | Fill all fields correctly → Submit            | Success message → Redirect to login page | Pass |          |
-| TC010        | Empty Fields         | Submit form without filling any field         | Display validation errors for all fields | Draft  |          |
+| TC009        | Valid Registration   | Fill all fields correctly → Submit            | Success message → Redirect to login page | Pass   |          |
+| TC010        | Empty Fields         | Submit form without filling any field         | Display validation errors for all fields | Pass   |          |
 | TC011        | Empty Name           | Leave Name blank → Submit                     | Error: *Name is required*                | Draft  |          |
 | TC012        | Invalid Email Format | Enter invalid email → Submit                  | Error: *Enter valid email address*       | Draft  |          |
-| TC013        | Short Password       | Enter password with less than 6 characters    | Error: *Password too short*              | Draft  |          |
-| TC014        | Password Mismatch    | Password ≠ Confirm Password → Submit          | Error: *Passwords do not match*          | Draft  |          |
-| TC015        | Duplicate Email      | Register using existing email                 | Error: *User already exists*             | Draft  |          |
-| TC016        | Successful Redirect  | Complete registration → Redirects to `/login` | Redirect successful                      | Pass  |          |
+| TC013        | Short Password       | Enter password with less than 6 characters    | Error: *Password too short*              | Fail   |          |
+| TC014        | Password Mismatch    | Password ≠ Confirm Password → Submit          | Error: *Passwords do not match*          | Fail   |          |
+| TC015        | Duplicate Email      | Register using existing email                 | Error: *User already exists*             | Fail   |          |
+| TC016        | Successful Redirect  | Complete registration → Redirects to `/login` | Redirect successful                      | Pass   |          |
 
 ---
 
@@ -37,13 +37,13 @@
 
 | Test Case ID | Feature                           | Steps                                 | Expected Result                 | Status | Comments |
 | ------------ | --------------------------------- | ------------------------------------- | ------------------------------- | ------ | -------- |
-| TC017        | Authenticated User to `/login`    | Login → Visit `/login` manually       | Redirected to dashboard         | Draft  |          |
-| TC018        | Authenticated User to `/register` | Login → Visit `/register` manually    | Redirected to dashboard         | Draft  |          |
-| TC019        | Guest Access to Dashboard         | Log out → Visit `/dashboard`          | Redirected to `/login`          | Draft  |          |
-| TC020        | Guest Access to `/admin`          | Visit `/admin` while logged out       | Redirected to `/login`          | Draft  |          |
-| TC021        | Non-Admin User Access to `/admin` | Login as normal user → Visit `/admin` | Access denied or redirected     | Draft  |          |
-| TC022        | Guest Access to `/feedback`       | Visit `/feedback` while not logged in | Redirected to `/login`          | Draft  |          |
-| TC023        | Admin Role Verification           | Login as admin → Access `/admin`      | Admin dashboard loads correctly | Draft  |          |
+| TC017        | Authenticated User to `/login`    | Login → Visit `/login` manually       | Redirected to dashboard         | Pass   |          |
+| TC018        | Authenticated User to `/register` | Login → Visit `/register` manually    | Redirected to dashboard         | Pass   |          |
+| TC019        | Guest Access to Dashboard         | Log out → Visit `/dashboard`          | Redirected to `/login`          | Pass   |          |
+| TC020        | Guest Access to `/admin`          | Visit `/admin` while logged out       | Redirected to `/login`          | Pass   |          |
+| TC021        | Non-Admin User Access to `/admin` | Login as normal user → Visit `/admin` | Access denied or redirected     | Pass   |          |
+| TC022        | Guest Access to `/feedback`       | Visit `/feedback` while not logged in | Redirected to `/login`          | Pass   |          |
+| TC023        | Admin Role Verification           | Login as admin → Access `/admin`      | Admin dashboard loads correctly | Pass   |          |
 
 ---
 

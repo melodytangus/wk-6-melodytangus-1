@@ -97,45 +97,41 @@
 | TC090        | Form Autofill                     | Use browser autofill                                             | Autofilled values handled properly               | Draft  |          | QA Team        | Chrome, Firefox, Edge |
 | TC091        | Cache Handling                    | Clear cache → Reload                                             | Data syncs correctly                             | Draft  |          | QA Team        | Chrome, Firefox, Edge |
 | TC092        | Unexpected Shutdown               | Close/reopen browser mid-session                                 | App resumes correctly or logs out                | Draft  |          | QA Team        | Chrome, Firefox, Edge |
-zation, Scheduling, Dashboard, Admin, Feedback, Blog, UI/UX, Security, Performance
-| Test Case ID | Feature                         | Steps                                   | Expected Result                                    | Status | Comments | Owner/Executor | Testing Environment           |
-| ------------ | ------------------------------- | --------------------------------------- | -------------------------------------------------- | ------ | -------- | -------------- | ----------------------------- |
-| TC093        | Notification on Pickup Schedule | Schedule a pickup → Check notifications | User receives notification                         | Draft  |          | QA Team        | Chrome, Firefox, Edge, Mobile |
-| TC094        | Email Notification              | Schedule pickup → Trigger email         | Email sent to user                                 | Draft  |          | QA Team        | Email client, Chrome          |
-| TC095        | SMS Notification                | Schedule pickup → Trigger SMS           | SMS sent to registered phone                       | Draft  |          | QA Team        | Mobile device                 |
-| TC096        | Edit Scheduled Pickup           | Edit existing pickup                    | Changes saved & visible on dashboard               | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC097        | Cancel Pickup                   | Cancel a scheduled pickup               | Status changes to canceled                         | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC098        | Pickup History                  | Visit dashboard → View past pickups     | All completed/canceled pickups listed              | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC099        | Multiple Roles                  | Assign multiple roles → Login           | Role permissions enforced correctly                | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC100        | Admin Create User               | Admin adds new user                     | User created successfully                          | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC101        | Admin Edit User                 | Admin edits existing user               | Changes applied successfully                       | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC102        | Admin Delete User               | Admin deletes user                      | User removed from system                           | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC103        | Feedback Analytics              | Admin views feedback summary            | Analytics charts correct                           | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC104        | Search Blog Posts               | Enter keyword → Search                  | Matching blog posts displayed                      | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC105        | Pagination Blog Posts           | Navigate pages in `/blog`               | Correct posts displayed per page                   | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC106        | Blog Post Draft Save            | Admin saves post as draft               | Post saved, not published                          | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC107        | Blog Post Publish               | Admin publishes post                    | Post visible to all users                          | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC108        | Blog Post Undo Delete           | Delete → Undo                           | Post restored successfully                         | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC109        | Community Forum Post            | Create forum post                       | Post visible in community section                  | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC110        | Community Forum Reply           | Reply to forum post                     | Reply visible to all users                         | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC111        | Community Forum Like            | Like a post                             | Like counter updates correctly                     | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC112        | Community Forum Report          | Report inappropriate post               | Admin notified, post flagged                       | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC113        | Gamification – Points Earn      | Complete a pickup → Earn points         | User points updated correctly                      | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC114        | Gamification – Leaderboard      | Visit leaderboard                       | Top users displayed correctly                      | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC115        | Gamification – Badges Earn      | Achieve milestone → Award badge         | Badge added to profile                             | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC116        | Gamification – Badge Display    | Visit profile                           | Badge visible on profile                           | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC117        | Admin – System Backup           | Trigger backup                          | Backup completes successfully                      | Draft  |          | QA Team        | Server environment            |
-| TC118        | Admin – System Restore          | Restore from backup                     | System restored correctly                          | Draft  |          | QA Team        | Server environment            |
-| TC119        | Security – CSRF Protection      | Submit forms                            | CSRF tokens verified & requests blocked if invalid | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC120        | Security – Two-Factor Auth      | Enable 2FA → Login                      | OTP required & verified                            | Draft  |          | QA Team        | Mobile, Chrome                |
-| TC121        | Security – Password Reset       | Request password reset                  | Reset email sent & works                           | Draft  |          | QA Team        | Email client, Chrome          |
-| TC122        | Performance – Load Homepage     | Simulate multiple users                 | Homepage loads under 3s                            | Draft  |          | QA Team        | Load testing tool             |
-| TC123        | Performance – Dashboard Load    | Simulate multiple users                 | Dashboard loads without errors                     | Draft  |          | QA Team        | Load testing tool             |
-| TC124        | Performance – Form Submission   | Simulate multiple concurrent pickups    | Form submissions processed                         | Draft  |          | QA Team        | Load testing tool             |
-| TC125        | Integration – Payment Module    | Submit payment                          | Payment recorded successfully                      | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC126        | Integration – Maps API          | Enter location → Maps used              | Correct location displayed on map                  | Draft  |          | QA Team        | Chrome, Firefox, Edge         |
-| TC127        | Mobile Responsiveness – Android | Open app                                | Layout correct, no broken elements                 | Draft  |          | QA Team        | Android devices               |
-| TC128        | Mobile Responsiveness – iOS     | Open app                                | Layout correct, no broken elements                 | Draft  |          | QA Team        | iOS devices                   |
-| TC129        | Offline Data Save               | Fill form offline → Reconnect           | Data synced automatically                          | Draft  |          | QA Team        | Chrome, Firefox, Mobile       |
-| TC130        | Multi-Language Support          | Switch language → Verify text           | All UI elements translated                         | Draft  |          | QA Team        | Chrome, Firefox, Mobile       |
-
+| TC093 | Notification on Pickup Schedule | Schedule a pickup → Check notifications | User receives notification | Draft | | QA Team | Chrome, Firefox, Edge, Mobile |
+| TC094 | Email Notification | Schedule pickup → Trigger email | Email sent to user | Draft | | QA Team | Email client, Chrome |
+| TC095 | SMS Notification | Schedule pickup → Trigger SMS | SMS sent to registered phone | Draft | | QA Team | Mobile device |
+| TC096 | Edit Scheduled Pickup | Edit existing pickup | Changes saved & visible on dashboard | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC097 | Cancel Pickup | Cancel a scheduled pickup | Status changes to canceled | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC098 | Pickup History | Visit dashboard → View past pickups | All completed/canceled pickups listed | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC099 | Multiple Roles | Assign multiple roles → Login | Role permissions enforced correctly | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC100 | Admin Create User | Admin adds new user | User created successfully | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC101 | Admin Edit User | Admin edits existing user | Changes applied successfully | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC102 | Admin Delete User | Admin deletes user | User removed from system | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC103 | Feedback Analytics | Admin views feedback summary | Analytics charts correct | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC104 | Search Blog Posts | Enter keyword → Search | Matching blog posts displayed | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC105 | Pagination Blog Posts | Navigate pages in `/blog` | Correct posts displayed per page | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC106 | Blog Post Draft Save | Admin saves post as draft | Post saved, not published | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC107 | Blog Post Publish | Admin publishes post | Post visible to all users | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC108 | Blog Post Undo Delete | Delete → Undo | Post restored successfully | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC109 | Community Forum Post | Create forum post | Post visible in community section | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC110 | Community Forum Reply | Reply to forum post | Reply visible to all users | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC111 | Community Forum Like | Like a post | Like counter updates correctly | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC112 | Community Forum Report | Report inappropriate post | Admin notified, post flagged | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC113 | Gamification – Points Earn | Complete a pickup → Earn points | User points updated correctly | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC114 | Gamification – Leaderboard | Visit leaderboard | Top users displayed correctly | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC115 | Gamification – Badges Earn | Achieve milestone → Award badge | Badge added to profile | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC116 | Gamification – Badge Display | Visit profile | Badge visible on profile | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC117 | Admin – System Backup | Trigger backup | Backup completes successfully | Draft | | QA Team | Server environment |
+| TC118 | Admin – System Restore | Restore from backup | System restored correctly | Draft | | QA Team | Server environment |
+| TC119 | Security – CSRF Protection | Submit forms | CSRF tokens verified & requests blocked if invalid | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC120 | Security – Two-Factor Auth | Enable 2FA → Login | OTP required & verified | Draft | | QA Team | Mobile, Chrome |
+| TC121 | Security – Password Reset | Request password reset | Reset email sent & works | Draft | | QA Team | Email client, Chrome |
+| TC122 | Performance – Load Homepage | Simulate multiple users | Homepage loads under 3s | Draft | | QA Team | Load testing tool |
+| TC123 | Performance – Dashboard Load | Simulate multiple users | Dashboard loads without errors | Draft | | QA Team | Load testing tool |
+| TC124 | Performance – Form Submission | Simulate multiple concurrent pickups | Form submissions processed | Draft | | QA Team | Load testing tool |
+| TC125 | Integration – Payment Module | Submit payment | Payment recorded successfully | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC126 | Integration – Maps API | Enter location → Maps used | Correct location displayed on map | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC127 | Mobile Responsiveness – Android | Open app | Layout correct, no broken elements | Draft | | QA Team | Android devices |
+| TC128 | Mobile Responsiveness – iOS | Open app | Layout correct, no broken elements | Draft | | QA Team | iOS devices |
+| TC129 | Offline Data Save | Fill form offline → Reconnect | Data synced automatically | Draft | | QA Team | Chrome, Firefox, Mobile |
+| TC130 | Multi-Language Support | Switch language → Verify text | All UI elements translated | Draft | | QA Team | Chrome, Firefox, Mobile |

@@ -121,17 +121,17 @@
 | TC114 | Gamification – Leaderboard | Visit leaderboard | Top users displayed correctly | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC115 | Gamification – Badges Earn | Achieve milestone → Award badge | Badge added to profile | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC116 | Gamification – Badge Display | Visit profile | Badge visible on profile | Fail | | QA Team | Chrome, Firefox, Edge |
-| TC117 | Admin – System Backup | Trigger backup | Backup completes successfully | Draft | | QA Team | Server environment |
-| TC118 | Admin – System Restore | Restore from backup | System restored correctly | Draft | | QA Team | Server environment |
+| TC117 | Admin – System Backup | Trigger backup | Backup completes successfully | Pass | | QA Team | Server environment |
+| TC118 | Admin – System Restore | Restore from backup | System restored correctly | Pass | | QA Team | Server environment |
 | TC119 | Security – CSRF Protection | Submit forms | CSRF tokens verified & requests blocked if invalid | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC120 | Security – Two-Factor Auth | Enable 2FA → Login | OTP required & verified | Fail | | QA Team | Mobile, Chrome |
 | TC121 | Security – Password Reset | Request password reset | Reset email sent & works | Fail | | QA Team | Email client, Chrome |
-| TC122 | Performance – Load Homepage | Simulate multiple users | Homepage loads under 3s | Draft | | QA Team | Load testing tool |
-| TC123 | Performance – Dashboard Load | Simulate multiple users | Dashboard loads without errors | Draft | | QA Team | Load testing tool |
-| TC124 | Performance – Form Submission | Simulate multiple concurrent pickups | Form submissions processed | Draft | | QA Team | Load testing tool |
+| TC122 | Performance – Load Homepage | Simulate multiple users | Homepage loads under 3s | Pass | | QA Team | Load testing tool |
+| TC123 | Performance – Dashboard Load | Simulate multiple users | Dashboard loads without errors | Pass | | QA Team | Load testing tool |
+| TC124 | Performance – Form Submission | Simulate multiple concurrent pickups | Form submissions processed | Pass | | QA Team | Load testing tool |
 | TC125 | Integration – Payment Module | Submit payment | Payment recorded successfully | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC126 | Integration – Maps API | Enter location → Maps used | Correct location displayed on map | Fail | | QA Team | Chrome, Firefox, Edge |
-| TC127 | Mobile Responsiveness – Android | Open app | Layout correct, no broken elements | Draft | | QA Team | Android devices |
-| TC128 | Mobile Responsiveness – iOS | Open app | Layout correct, no broken elements | Draft | | QA Team | iOS devices |
-| TC129 | Offline Data Save | Fill form offline → Reconnect | Data synced automatically | Draft | | QA Team | Chrome, Firefox, Mobile |
+| TC127 | Mobile Responsiveness – Android | Open app | Layout correct, no broken elements | Fail | | QA Team | Android devices |
+| TC128 | Mobile Responsiveness – iOS | Open app | Layout correct, no broken elements | Fail | | QA Team | iOS devices |
+| TC129 | Offline Data Save | Fill form offline → Reconnect | Data synced automatically | Pass | | QA Team | Chrome, Firefox, Mobile |
 | TC130 | Multi-Language Support | Switch language → Verify text | All UI elements translated | Fail | | QA Team | Chrome, Firefox, Mobile |

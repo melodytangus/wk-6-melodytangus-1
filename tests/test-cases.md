@@ -16,7 +16,7 @@
 | TC009 | Valid Registration | Fill all fields correctly → Submit | Success message → Redirect to login page | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC010 | Empty Fields | Submit form without filling any field | Display validation errors for all fields | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC011 | Empty Name | Leave Name blank → Submit | Error: *Name is required* | Pass | | QA Team | Chrome, Firefox, Edge |
-| TC012 | Invalid Email Format | Enter invalid email → Submit | Error: *Enter valid email address* | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC012 | Invalid Email Format | Enter invalid email → Submit | Error: *Enter valid email address* | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC013 | Short Password | Enter password with less than 6 characters | Error: *Password too short* | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC014 | Password Mismatch | Password ≠ Confirm Password → Submit | Error: *Passwords do not match* | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC015 | Duplicate Email | Register using existing email | Error: *User already exists* | Fail | | QA Team | Chrome, Firefox, Edge |
@@ -28,8 +28,8 @@
 | TC021 | Non-Admin Access `/admin` | Login as normal user → Visit `/admin` | Access denied or redirected | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC022 | Guest Access to `/feedback` | Visit `/feedback` while not logged in | Redirected to `/login` | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC023 | Admin Role Verification | Login as admin → Access `/admin` | Admin dashboard loads correctly | Pass | | QA Team | Chrome, Firefox, Edge |
-| TC024 | Page Load `/home` | Navigate to `/home` | Waste pickup form visible | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC025 | Empty Form Submission | Submit without filling form | Display required field errors | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC024 | Page Load `/home` | Navigate to `/home` | Waste pickup form visible | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC025 | Empty Form Submission | Submit without filling form | Display required field errors | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC026 | Invalid Input (Location) | Enter numbers only in Location → Submit | Error message for invalid format | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC027 | Missing Waste Type | Leave *Waste Type* empty → Submit | Error: *Waste Type is required* | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC028 | Valid Form Submission | Fill all fields correctly → Submit | Success message, data saved | Pass | | QA Team | Chrome, Firefox, Edge |
@@ -55,8 +55,8 @@
 | TC048 | Admin Logout | Click logout | Session cleared → Redirected to `/` | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC049 | Page Load `/feedback` | Navigate to `/feedback` | Form and fields visible | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC050 | Empty Form Submission | Click Submit without filling fields | Required field errors displayed | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC051 | Partial Input | Fill only Name → Submit | Error: *Message required* | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC052 | Valid Submission | Fill all fields → Submit | Success confirmation message | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC051 | Partial Input | Fill only Name → Submit | Error: *Message required* | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC052 | Valid Submission | Fill all fields → Submit | Success confirmation message | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC053 | Data Persistence | Refresh after submit | Form resets, confirmation disappears | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC054 | Invalid Email Input | Enter bad email → Submit | Error: *Enter valid email* | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC055 | Character Limit | Enter 500+ characters → Submit | Error: *Message too long* | Draft | | QA Team | Chrome, Firefox, Edge |
@@ -130,7 +130,7 @@
 | TC123 | Performance – Dashboard Load | Simulate multiple users | Dashboard loads without errors | Draft | | QA Team | Load testing tool |
 | TC124 | Performance – Form Submission | Simulate multiple concurrent pickups | Form submissions processed | Draft | | QA Team | Load testing tool |
 | TC125 | Integration – Payment Module | Submit payment | Payment recorded successfully | Fail | | QA Team | Chrome, Firefox, Edge |
-| TC126 | Integration – Maps API | Enter location → Maps used | Correct location displayed on map | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC126 | Integration – Maps API | Enter location → Maps used | Correct location displayed on map | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC127 | Mobile Responsiveness – Android | Open app | Layout correct, no broken elements | Draft | | QA Team | Android devices |
 | TC128 | Mobile Responsiveness – iOS | Open app | Layout correct, no broken elements | Draft | | QA Team | iOS devices |
 | TC129 | Offline Data Save | Fill form offline → Reconnect | Data synced automatically | Draft | | QA Team | Chrome, Firefox, Mobile |

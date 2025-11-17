@@ -34,13 +34,13 @@
 | TC027 | Missing Waste Type | Leave *Waste Type* empty → Submit | Error: *Waste Type is required* | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC028 | Valid Form Submission | Fill all fields correctly → Submit | Success message, data saved | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC029 | Data Persistence | Submit valid request → Refresh page | Previously entered requests visible | Fail | | QA Team | Chrome, Firefox, Edge |
-| TC030 | Multiple Submissions | Submit several valid requests | All requests appear in dashboard | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC030 | Multiple Submissions | Submit several valid requests | All requests appear in dashboard | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC031 | Clear Form After Submit | Submit valid form | Form resets after success message | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC032 | View Requests | Login → Go to dashboard | All user pickup requests displayed | Fail | | QA Team | Chrome, Firefox, Edge |
-| TC033 | Filter by Status | Apply filter “Scheduled” | Only scheduled pickups displayed | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC033 | Filter by Status | Apply filter “Scheduled” | Only scheduled pickups displayed | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC034 | Filter by Location | Choose location filter → Apply | Filtered results displayed correctly | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC035 | Status Update | Mark a pickup as “Completed” | Status updates in UI and localStorage | Fail | | QA Team | Chrome, Firefox, Edge |
-| TC036 | Pagination Display | Scroll or navigate through table pages | All pages load data properly | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC036 | Pagination Display | Scroll or navigate through table pages | All pages load data properly | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC037 | Request Count | Check request counter on dashboard | Count matches total displayed | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC038 | Delete Request | Delete a request | Request removed successfully | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC039 | Data Retention | Refresh after deleting | Deleted data not reappearing | Fail | | QA Team | Chrome, Firefox, Edge |
@@ -50,11 +50,11 @@
 | TC043 | Update Request Status | Mark “Scheduled” → “Completed” | Status updates successfully | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC044 | Invalid Update Attempt | Try to update already completed task | Error: *Cannot update completed request* | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC045 | Data Sync | Update request → Refresh page | Data remains updated | Fail | | QA Team | Chrome, Firefox, Edge |
-| TC046 | View Statistics | Check dashboard stats section | Accurate counts of requests displayed | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC047 | Unauthorized Access Attempt | Non-admin visits `/admin` | Redirected to `/login` | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC048 | Admin Logout | Click logout | Session cleared → Redirected to `/` | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC049 | Page Load `/feedback` | Navigate to `/feedback` | Form and fields visible | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC050 | Empty Form Submission | Click Submit without filling fields | Required field errors displayed | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC046 | View Statistics | Check dashboard stats section | Accurate counts of requests displayed | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC047 | Unauthorized Access Attempt | Non-admin visits `/admin` | Redirected to `/login` | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC048 | Admin Logout | Click logout | Session cleared → Redirected to `/` | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC049 | Page Load `/feedback` | Navigate to `/feedback` | Form and fields visible | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC050 | Empty Form Submission | Click Submit without filling fields | Required field errors displayed | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC051 | Partial Input | Fill only Name → Submit | Error: *Message required* | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC052 | Valid Submission | Fill all fields → Submit | Success confirmation message | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC053 | Data Persistence | Refresh after submit | Form resets, confirmation disappears | Draft | | QA Team | Chrome, Firefox, Edge |

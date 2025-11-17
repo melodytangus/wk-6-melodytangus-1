@@ -57,10 +57,10 @@
 | TC050 | Empty Form Submission | Click Submit without filling fields | Required field errors displayed | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC051 | Partial Input | Fill only Name → Submit | Error: *Message required* | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC052 | Valid Submission | Fill all fields → Submit | Success confirmation message | Pass | | QA Team | Chrome, Firefox, Edge |
-| TC053 | Data Persistence | Refresh after submit | Form resets, confirmation disappears | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC054 | Invalid Email Input | Enter bad email → Submit | Error: *Enter valid email* | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC055 | Character Limit | Enter 500+ characters → Submit | Error: *Message too long* | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC056 | View Blog Page | Navigate to `/blog` | List of blog posts displayed | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC053 | Data Persistence | Refresh after submit | Form resets, confirmation disappears | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC054 | Invalid Email Input | Enter bad email → Submit | Error: *Enter valid email* | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC055 | Character Limit | Enter 500+ characters → Submit | Error: *Message too long* | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC056 | View Blog Page | Navigate to `/blog` | List of blog posts displayed | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC057 | View Blog Article | Click on an article | Full article opens correctly | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC058 | Invalid Article ID | Visit `/blog/9999` | Error or “Not Found” message | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC059 | Admin Login for Blog | Login as admin → `/blog/admin` | Blog admin dashboard visible | Draft | | QA Team | Chrome, Firefox, Edge |

@@ -85,25 +85,25 @@
 | TC078 | Prevent SQL Injection | Try `' OR 1=1--` in input | Request blocked or sanitized | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC079 | Secure Session Storage | Inspect local/session storage | Sensitive data not stored in plain text | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC080 | HTTPS Verification | Access via HTTPS | App enforces HTTPS redirect | Fail | | QA Team | Chrome, Firefox, Edge |
-| TC081 | Logout Session Clear | Logout → Check localStorage | Tokens cleared properly | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC082 | Eldoret Filter Bug | Filter dashboard by *Eldoret* | Correct location data shown | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC083 | Multiple Filter Use | Apply multiple filters | Combined filters work correctly | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC084 | Rapid Submissions | Submit form repeatedly | App prevents duplicates | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC085 | Offline Mode | Disable internet → Reload app | App handles offline gracefully | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC086 | Broken Image Check | Browse all pages | No missing images | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC087 | Error Logging | Trigger an intentional error | Error logged without crash | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC088 | Load Test | Simulate multiple users | App remains stable | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC089 | Browser Compatibility | Test on Chrome, Firefox, Edge | App works across browsers | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC090 | Form Autofill | Use browser autofill | Autofilled values handled properly | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC091 | Cache Handling | Clear cache → Reload | Data syncs correctly | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC092 | Unexpected Shutdown | Close/reopen browser mid-session | App resumes correctly or logs out | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC081 | Logout Session Clear | Logout → Check localStorage | Tokens cleared properly | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC082 | Eldoret Filter Bug | Filter dashboard by *Eldoret* | Correct location data shown | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC083 | Multiple Filter Use | Apply multiple filters | Combined filters work correctly | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC084 | Rapid Submissions | Submit form repeatedly | App prevents duplicates | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC085 | Offline Mode | Disable internet → Reload app | App handles offline gracefully | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC086 | Broken Image Check | Browse all pages | No missing images | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC087 | Error Logging | Trigger an intentional error | Error logged without crash | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC088 | Load Test | Simulate multiple users | App remains stable | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC089 | Browser Compatibility | Test on Chrome, Firefox, Edge | App works across browsers | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC090 | Form Autofill | Use browser autofill | Autofilled values handled properly | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC091 | Cache Handling | Clear cache → Reload | Data syncs correctly | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC092 | Unexpected Shutdown | Close/reopen browser mid-session | App resumes correctly or logs out | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC093 | Notification on Pickup Schedule | Schedule a pickup → Check notifications | User receives notification | Fail | | QA Team | Chrome, Firefox, Edge, Mobile |
 | TC094 | Email Notification | Schedule pickup → Trigger email | Email sent to user | Fail | | QA Team | Email client, Chrome |
-| TC095 | SMS Notification | Schedule pickup → Trigger SMS | SMS sent to registered phone | Draft | | QA Team | Mobile device |
-| TC096 | Edit Scheduled Pickup | Edit existing pickup | Changes saved & visible on dashboard | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC097 | Cancel Pickup | Cancel a scheduled pickup | Status changes to canceled | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC098 | Pickup History | Visit dashboard → View past pickups | All completed/canceled pickups listed | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC099 | Multiple Roles | Assign multiple roles → Login | Role permissions enforced correctly | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC095 | SMS Notification | Schedule pickup → Trigger SMS | SMS sent to registered phone | Fail | | QA Team | Mobile device |
+| TC096 | Edit Scheduled Pickup | Edit existing pickup | Changes saved & visible on dashboard | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC097 | Cancel Pickup | Cancel a scheduled pickup | Status changes to canceled | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC098 | Pickup History | Visit dashboard → View past pickups | All completed/canceled pickups listed | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC099 | Multiple Roles | Assign multiple roles → Login | Role permissions enforced correctly | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC100 | Admin Create User | Admin adds new user | User created successfully | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC101 | Admin Edit User | Admin edits existing user | Changes applied successfully | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC102 | Admin Delete User | Admin deletes user | User removed from system | Fail | | QA Team | Chrome, Firefox, Edge |

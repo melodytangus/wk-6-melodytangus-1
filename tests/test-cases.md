@@ -68,23 +68,23 @@
 | TC061 | Edit Blog Post | Modify existing post → Save | Updated post content visible | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC062 | Delete Blog Post | Delete an article | Removed from blog list | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC063 | Unauthorized Blog Access | Normal user visits `/blog/admin` | Redirected to `/login` or denied | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC064 | Home Navigation | Click logo → Navigate home | Redirected to home page | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC065 | Navbar Links | Click each nav link (Home, Dashboard, Feedback) | Redirects correctly | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC064 | Home Navigation | Click logo → Navigate home | Redirected to home page | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC065 | Navbar Links | Click each nav link (Home, Dashboard, Feedback) | Redirects correctly | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC066 | Footer Links | Scroll → Click footer link | Opens correct external/internal link | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC067 | Responsive Design – Mobile | Open app on mobile | Layout adapts properly | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC068 | Responsive Design – Tablet | Open app on tablet | Layout adapts properly | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC069 | Keyboard Navigation | Use Tab key to navigate | All buttons/links focusable | Draft | | QA Team | Chrome, Firefox,Edge |
+| TC067 | Responsive Design – Mobile | Open app on mobile | Layout adapts properly | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC068 | Responsive Design – Tablet | Open app on tablet | Layout adapts properly | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC069 | Keyboard Navigation | Use Tab key to navigate | All buttons/links focusable | Pass | | QA Team | Chrome, Firefox,Edge |
 | TC070 | Color Contrast | Check contrast ratio | Meets WCAG standards | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC071 | Font Readability | Verify font sizes & weights | Text clear across all devices | Pass | | QA Team | Chrome, Firefox, Edge |
-| TC072 | Loading Speed | Test app load time | Loads under 3 seconds | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC072 | Loading Speed | Test app load time | Loads under 3 seconds | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC073 | Broken Links | Click all navigational links | No broken links found | Pass | | QA Team | Chrome, Firefox, Edge |
-| TC074 | Password Encryption | Inspect stored user data | Passwords stored as hashes | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC075 | Data Access Control | Verify user cannot access others’ data | Access restricted properly | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC076 | Input Sanitization | Enter special chars in input fields | App escapes/sanitizes inputs | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC077 | Prevent XSS | Inject script tag in input | Script not executed | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC078 | Prevent SQL Injection | Try `' OR 1=1--` in input | Request blocked or sanitized | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC079 | Secure Session Storage | Inspect local/session storage | Sensitive data not stored in plain text | Draft | | QA Team | Chrome, Firefox, Edge |
-| TC080 | HTTPS Verification | Access via HTTPS | App enforces HTTPS redirect | Draft | | QA Team | Chrome, Firefox, Edge |
+| TC074 | Password Encryption | Inspect stored user data | Passwords stored as hashes | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC075 | Data Access Control | Verify user cannot access others’ data | Access restricted properly | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC076 | Input Sanitization | Enter special chars in input fields | App escapes/sanitizes inputs | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC077 | Prevent XSS | Inject script tag in input | Script not executed | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC078 | Prevent SQL Injection | Try `' OR 1=1--` in input | Request blocked or sanitized | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC079 | Secure Session Storage | Inspect local/session storage | Sensitive data not stored in plain text | Pass | | QA Team | Chrome, Firefox, Edge |
+| TC080 | HTTPS Verification | Access via HTTPS | App enforces HTTPS redirect | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC081 | Logout Session Clear | Logout → Check localStorage | Tokens cleared properly | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC082 | Eldoret Filter Bug | Filter dashboard by *Eldoret* | Correct location data shown | Draft | | QA Team | Chrome, Firefox, Edge |
 | TC083 | Multiple Filter Use | Apply multiple filters | Combined filters work correctly | Draft | | QA Team | Chrome, Firefox, Edge |

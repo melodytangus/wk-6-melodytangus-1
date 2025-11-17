@@ -81,7 +81,7 @@
 | TC074 | Password Encryption | Inspect stored user data | Passwords stored as hashes | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC075 | Data Access Control | Verify user cannot access others’ data | Access restricted properly | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC076 | Input Sanitization | Enter special chars in input fields | App escapes/sanitizes inputs | Fail | | QA Team | Chrome, Firefox, Edge |
-| TC077 | Prevent XSS | Inject script tag in input | Script not executed | Fail | | QA Team | Chrome, Firefox, Edge |
+| TC077 | Prevent XSS | Inject script tag in input | Script not executed | Fail |Some fields in the form like 'Username Field' are not 'Whitelisted' to contain input to text/numerics only. This leaves the app vulnerable due to lack of data sanitization. If a hacker was to inject a malicious script and the server reflects it, it can easily lead to delivery of malware or credential theft and other attacks | QA Team | Chrome, Firefox, Edge |
 | TC078 | Prevent SQL Injection | Try `' OR 1=1--` in input | Request blocked or sanitized | Fail | | QA Team | Chrome, Firefox, Edge |
 | TC079 | Secure Session Storage | Inspect local/session storage | Sensitive data not stored in plain text | Pass | | QA Team | Chrome, Firefox, Edge |
 | TC080 | HTTPS Verification | Access via HTTPS | App enforces HTTPS redirect | Fail | | QA Team | Chrome, Firefox, Edge |

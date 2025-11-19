@@ -379,12 +379,14 @@ While CleanCity demonstrates strong potential as a community-driven waste manage
 
 > [Open Defect Log](./defect-log.md)
 
-### **Appendix D: Challenges.md
+### Appendix D: Challenges.md
 [Open Challenges Document](./challenges.md)
 
 ###  Appendix F: PDF Version of Report  
-[CleanCity Test Report (PDF)] (./TestCaseTrio_CleanCity_QA_Report_18 Nov.pdf)
-###  Appendix G: Screenshots**
+[TestCaseTrio – CleanCity QA Report (PDF)](./TestCaseTrio_CleanCity_QA_Report_18%20Nov.pdf)
+
+
+###  Appendix G: Screenshots
 
 > ![Login Page](./Screenshots/login-page.png)
 > ![Admin Panel](./Screenshots/admin-panel.png)
@@ -393,8 +395,6 @@ While CleanCity demonstrates strong potential as a community-driven waste manage
 > ![Defects Evidence](./Screenshots/Defects-evidence.png)
 
 ---
-
-# # **24. PLP Logo**
 
 > ![PLP Logo](./Screenshots/plp-logo.webp)
 

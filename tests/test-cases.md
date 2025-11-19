@@ -4,7 +4,7 @@
 # Status options: Draft / In Progress / Pass / Fail
 
 | Test Case ID | Feature | Steps | Expected Result | Status | Comments | Owner/Executor | Testing Environment |
-| ------------ | -------- | ------ | ---------------- | ------ | ------------------------------------ | -------------- | --------------------- |
+| ------------ | -------- | ------ | ---------------- | ------ | ------------------------------------------- | ------------------------- | --------------------------- |
 | TC001 | Valid Login | Open `/login` → Enter valid email & password → Click **Log in** | Redirected to dashboard with welcome message | Pass | Test executed successfully. User redirected to dashboard with correct welcome message. Session token generated properly. | Susan Mwangi | Chrome, Firefox, Edge |
 | TC002 | Invalid Password | Enter valid email but incorrect password → Submit | Error: *Invalid email or password* | Fail | Error message not displaying correctly. Expected "Invalid email or password" but no error shown on screen. Authentication logic needs review. | Susan Mwangi | Chrome, Firefox, Edge |
 | TC003 | Invalid Email Format | Enter invalid email format (e.g., `abc@`) → Submit | Error message displayed: *Invalid email address* | Fail | Email validation not working. System accepts malformed email addresses (e.g., abc@) without showing error message. Frontend validation needs implementation.

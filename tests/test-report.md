@@ -9,7 +9,7 @@
 
 ---
 
-## ![PLP Logo Placeholder – replace with actual image](./plp-logo.png)
+## ![PLP Logo](./Screenshots/plp-logo.webp)
 
 ---
 
@@ -19,7 +19,7 @@
 
 ### **Course:** Software Testing
 
-### **Institution:** Power Learn Project (PLP)
+### **Institution:** Power Learn Project (PLP) Software Development
 
 ### **Team Name:** Test Case Trio
 
@@ -383,24 +383,19 @@ While CleanCity demonstrates strong potential as a community-driven waste manage
 [Open Challenges Document](./challenges.md)
 
 ###  Appendix F: PDF Version of Report  
-[CleanCity Test Report (PDF)](./CleanCity_Test_Report.pdf)
-
+[CleanCity Test Report (PDF)] (./TestCaseTrio_CleanCity_QA_Report_18 Nov.pdf)
 ###  Appendix G: Screenshots**
 
-> `![Screenshot Placeholder](./screenshots/screen01.png)`
-
-Add as many as needed:
-
-* Login page
-* Dashboard
-* Pickup form
-* Admin panel
-* Blog pages
-* Defects evidence
+> ![Login Page](./Screenshots/login-page.png)
+> ![Admin Panel](./Screenshots/admin-panel.png)
+> ![Pickup Form](./Screenshots/pickup-form.png)
+> ![Blog Post](./Screenshots/Blog-post.png)
+> ![Defects Evidence](./Screenshots/Defects-evidence.png)
 
 ---
 
 # # **24. PLP Logo**
 
-> ![PLP Logo Placeholder](./plp-logo.png)
+> ![PLP Logo](./Screenshots/plp-logo.webp)
+
 

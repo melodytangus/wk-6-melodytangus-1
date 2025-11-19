@@ -382,10 +382,10 @@ While CleanCity demonstrates strong potential as a community-driven waste manage
 ### **Appendix D: Challenges.md
 [Open Challenges Document](./challenges.md)
 
-### **Appendix F: PDF Version of Report  
+###  Appendix F: PDF Version of Report  
 [CleanCity Test Report (PDF)](./CleanCity_Test_Report.pdf)
 
-### **Appendix G: Screenshots**
+###  Appendix G: Screenshots**
 
 > `![Screenshot Placeholder](./screenshots/screen01.png)`
 

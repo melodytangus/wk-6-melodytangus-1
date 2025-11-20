@@ -25,5 +25,14 @@ describe('Login Component (Smoke + Validation)', () => {
     // Component must render these messages
     expect(screen.getByText(/please enter email and password/i)).toBeInTheDocument();
   });
+test("rejects duplicate email", () => {
+  localStorage.setItem("users", JSON.stringify([{ email: "a@test.com", password: "123" }]));
+  render(<Register />);
 
+  fireEvent.change(screen.getByPlaceholderText("Email"), { target: { value: "a@test.com" }});
+  fireEvent.change(screen.getByPlaceholderText("Password"), { target: { value: "12345" }});
+  fireEvent.click(screen.getByText("Register"));
+
+  expect(screen.getByText(/email already exists/i)).toBeInTheDocument();
+});
 });

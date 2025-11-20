@@ -85,7 +85,7 @@ Overall, the application **meets basic functionality** but requires **major fixe
 * Verify responsiveness across devices and browsers.
 * Identify and document defects.
 * Validate input handling and localStorage data persistence.
-* Establish baseline automated test coverage (Jest).
+* Establish baseline test coverage (Jest).
 
 ---
 
@@ -158,7 +158,7 @@ Overall, the application **meets basic functionality** but requires **major fixe
 * Compatibility Testing
 * Regression Testing
 * Manual Exploratory Testing
-* Automated Testing (Unit + Integration using Jest)
+* Unit + Integration using Jest
 
 ---
 
@@ -385,9 +385,25 @@ While CleanCity demonstrates strong potential as a community-driven waste manage
 ###  Appendix F: PDF Version of Report  
 [TestCaseTrio – CleanCity QA Report (PDF)](./TestCaseTrio_CleanCity_QA_Report_18%20Nov.pdf)
 
+###  Appendix G : Test Scripts 
+Unit Test (Jest Script) 
+- [Admin Panel Tests](../src/_tests_/admin/adminPanel.test.js)
+- [Login Tests](../src/_tests_/auth/login.test.js)
+- [Register Tests](../src/_tests_/auth/register.test.js)
+- [Feedback Tests](../src/_tests_/feedback/feedback.test.js)
+- [Mobile Responsiveness Tests](../src/_tests_/mobile/responsiveness.test.js)
+- [Notification Tests](../src/_tests_/notifications/NotificationBell.test.js)
+- [Performance Tests](../src/_tests_/performance/load.test.js)
+- [Pickup Form Tests](../src/_tests_/pickup/pickupForm.test.js)
+- [Security XSS Tests](../src/_tests_/security/xss.test.js)
 
-###  Appendix G: Screenshots
+Automated Tes(Selenium)
+- [Login Tests](../src/_tests_/auth/test_login.py)
 
+### Appendix H: Demo Video
+[Watch Demo Video](https://drive.google.com/file/d/1MTod-FGwkbY24Dw6vh_xKRNmdwPOKKHf/view?usp=drive_link)
+
+###  Appendix I: Screenshots
 > ![Login Page](./Screenshots/login-page.png)
 > ![Admin Panel](./Screenshots/admin-panel.png)
 > ![Pickup Form](./Screenshots/pickup-form.png)

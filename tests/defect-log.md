@@ -32,7 +32,7 @@
 | **D024**  | R-032 Chrome Visibility             | Admin cannot view requests in Chrome           | Login admin via Chrome → Requests not displayed         | High         | Open   | Browser compatibility issue    | Lorraine Bwayo  |
 | **D025**  | R-033 Admin Filters                 | Admin filter by location not working           | Apply location filter → No results                      | Medium       | Open   | Filtering logic missing        | Melody Chemutai |
 | **D026**  | R-028 Pagination                    | Dashboard pagination inconsistent              | Navigate pages → Empty/misaligned lists                 | Low          | Open   | Needs logic fix                | Melody Chemutai |
-| **D027**  | R-056 Blog Upload                   | Blog image upload fails                        | Upload image → Error shown                              | Medium       | Open   | Cloud storage/upload bug       | Melody Chemutai |
+| **D027**  | R-056 Blog Upload                   | Blog image upload fails                        | Upload image → Error displayed                          | Medium       | Open   | Cloud storage/upload bug       | Melody Chemutai |
 | **D028**  | R-058 Password Change               | Weak passwords accepted during password change | Change password → Use short/weak password               | Medium       | Open   | Missing strength rules         | Susan Mwangi    |
 | **D029**  | R-059 Password Reset                | Password reset emails not being sent           | Trigger “Forgot password” → No email                    | High         | Open   | SMTP not configured            | Susan Mwangi    |
 | **D030**  | R-062 Notifications                 | Notifications cannot be deleted                | Click “Delete notification” → Nothing happens           | Low          | Open   | UI not linked to backend       | Lorraine Bwayo  |
@@ -49,6 +49,4 @@
 | **D041**  | R-081 Two-Factor Authentication     | OTP 2FA unreliable / fails                     | Enable 2FA → OTP not delivered                          | High         | Open   | SMS/Email integration failing  | Susan Mwangi    |
 | **D042**  | R-082 Session Timeout               | Session timeout not enforced                   | Stay idle 30 min → Still logged in                      | Medium       | Open   | Missing timeout logic          | Susan Mwangi    |
 | **D043**  | R-083 Performance                   | Dashboard takes over 2 seconds to load         | Login → Dashboard loads slowly                          | Medium       | Open   | Slow DB queries                | Mercy Melody    |
-| **D044**  | R-084 Session Conflict              | Multiple logins conflict                       | Login same user on 2 devices → Session issues           | Medium       | Open   | Token reuse problem            | Susan Mwangi    |
-
 

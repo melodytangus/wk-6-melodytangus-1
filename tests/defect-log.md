@@ -45,7 +45,7 @@
 | **D042**  | R-074 Logs Viewer                   | System logs not showing required details       | Open logs → Missing entries/events                      | Medium       | Open   | Logging not implemented fully  | Mercy Melody    |
 | **D043**  | R-075 Logs Deletion                 | Logs cannot be deleted                         | Click delete → Nothing happens                          | Low          | Open   | Delete endpoint missing        | Mercy Melody    |
 | **D044**  | R-076 User Search                   | Search users fails                             | Enter keyword → No results                              | Medium       | Open   | Broken search query            | Lorraine Bwayo  |
-| **D045**  | R-079 Access Control                | Unauthorized access bypass                     | Access admin route via URL → Loads page                 | **Critical** | Open   | Missing auth guard             | Susan Mwangi    |
+| **D045**  | [https://github.com/melodytangus/wk-6-melodytangus-1/issues/22](https://github.com/melodytangus/wk-6-melodytangus-1/issues/22) R-079 Access Control                | Unauthorized access bypass                     | Access admin route via URL → Loads page                 | **Critical** | Open   | Missing auth guard             | Susan Mwangi    |
 | **D046**  | R-081 Two-Factor Authentication     | OTP 2FA unreliable / fails                     | Enable 2FA → OTP not delivered                          | High         | Open   | SMS/Email integration failing  | Susan Mwangi    |
 | **D047**  | R-082 Session Timeout               | Session timeout not enforced                   | Stay idle 30 min → Still logged in                      | Medium       | Open   | Missing timeout logic          | Susan Mwangi    |
 
